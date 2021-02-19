@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+	<p
+		style="text-align: center; font-size: 45px; color: blue; margin-top: 4cm;">FICHE
+		DE RENDEZ VOUS</p>
+	<p style="text-align: center; font-size: 25px;">
+		NUMERO DE RECU : <span th:text="${num} "></span>
+	</p>
+	<br></br>
+	<br></br>
+
+	<p style="margin-left: 1cm; color: blue; font-size: 20px;">
+		Nom: <span
+			style=" color: black;; float: right;"
+			th:text="${nom} "></span>
+	</p>
+	<p style="margin-left: 1cm; font-size: 20px;">
+		Prenom: <span
+			style=" float: right;"
+			th:text="${prenom} "></span>
+	</p>
+	<p style="margin-left: 1cm; color: blue; font-size: 20px;">
+		Sex : <span
+			style="color: black; float: right;"
+			th:text="${sex}"></span>
+	</p>
+	<p style="margin-left: 1cm; font-size: 20px;">
+		Age : <span style="float: right;"
+			th:text="${age}"></span>
+	</p>
+
+	<p style="margin-left: 1cm; color: blue; font-size: 20px;">
+		Tel : <span
+			style=" color: black; float: right;"
+			th:text="${tel}"></span>
+	</p>
+	<p style="margin-left: 1cm; font-size: 20px;">
+		Ville : <span
+			style=" float: right;"
+			th:text="${ville}"></span>
+	</p>
+	<p style="margin-left: 1cm; color: blue; font-size: 20px;">
+		Centre de Vaccination : <span
+			style=" margin-left: 2cm;color: black; "
+			th:text="${cv}"></span>
+	</p>
+	<p style="margin-left: 1cm; font-size: 20px;">
+		Vaccin : <span
+			style="  float: right;"
+			th:text="${vaccin}"></span>
+	</p>
+	<p style="margin-left: 1cm; font-size: 20px; color: blue;">
+		Date : <span
+			style="  color: black; float: right;"
+			th:text="${date}"></span>
+	</p>
+
+	<p
+		style="text-decoration: underline; font-size: 22px; display: block; margin-top: 4cm; color: blue; margin-bottom: 0cm">
+		Notes Importantes :</p>
+
+	<p style="font-size: 16px; display: block; margin-left: 1cm">- Les
+		heures de travail sont comprises entre 08:00 heure et 17:00 heure.</p>
+	<p style="font-size: 16px; display: block; margin-left: 1cm">- La
+		date et le centre de vaccination indiques dans le document doivent
+		etre respectes.</p>
+	<p style="font-size: 16px; display: block; margin-left: 1cm">- Dans
+		le cas ou vous manquez la date fixee, vous devez  demander un
+		nouveau rendez-vous.</p>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<img src="src/main/resources/images/min.png" />
+	<p
+		style="text-align: center; font-size: 45px; color: blue;">Certificat de Vaccination</p>
+<p style="text-align: center; font-size: 35px;">contre le Covid-19</p>
+	<br></br>
+	<p style="margin-left: 1cm; color: blue; font-size: 20px;">
+		Nom: <span
+			style="margin-left: 1cm; margin-right: 2cm; color: black;; float: right;"
+			th:text="${nom} "></span>
+	</p>
+	<p style="margin-left: 1cm; font-size: 20px;">
+		Prenom: <span
+			style="margin-left: 1cm; margin-right: 2cm; float: right;"
+			th:text="${prenom} "></span>
+	</p>
+	<p style="margin-left: 1cm; color: blue; font-size: 20px;">
+		Sex : <span
+			style="margin-left: 1cm; margin-right: 2cm; color: black; float: right;"
+			th:text="${sex}"></span>
+	</p>
+	<p style="margin-left: 1cm; font-size: 20px;">
+		Age : <span style="margin-left: 1cm; margin-right: 2cm; float: right;"
+			th:text="${age}"></span>
+	</p>
+
+	<p style="margin-left: 1cm; color: blue; font-size: 20px;">
+		Tel : <span
+			style="margin-left: 1cm; margin-right: 2cm; color: black; float: right;"
+			th:text="${tel}"></span>
+	</p>
+		<p style="margin-left: 1cm; color: black; font-size: 20px;">
+		Date de Premiére Dose : <span
+			style="margin-left: 1cm; margin-right: 2cm; color: blue; float: right;"
+			th:text="${datedose1}"></span>
+	</p>
+		<p style="margin-left: 1cm; color:black ; font-size: 20px;">
+		Date de Deuxiéme Dose : <span
+			style="margin-left: 1cm; margin-right: 2cm; color:blue ; float: right;"
+			th:text="${datedose2}"></span>
+	</p>
+<p style="text-decoration: underline; font-size: 22px; display: block; margin-top: 2cm; color: blue; margin-bottom: 0cm">
+		Avis Importantes :</p>
+
+	<p style="font-size: 16px; display: block; margin-left: 1cm">-
+		Cette certificat va vous permettre de profiter de plusieurs fonctionnalites comme le deplacement de pays en pays .</p>
+	<p style="font-size: 16px; display: block; margin-left: 1cm">- 
+		Il ne peut etre delivre qu'un seul exemplaire de cette Certificat. Aucun duplicata ne sera fourni.</p>
+
+		<br></br>
+
+<p style="margin-left: 3cm; color:black ; font-size: 20px;">
+		Fait le   <span
+			style="margin-left: 1cm; margin-right: 2cm ; float: right;"
+			th:text="${datecert}"></span>
+	</p>
+	
+
+</body>
+</html>
