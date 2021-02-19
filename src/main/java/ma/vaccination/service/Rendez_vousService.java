@@ -281,6 +281,7 @@ public class Rendez_vousService {
 		   
 		  List<Client>clts =clientdao.findAll();
 		  for(Client clt : clts) {
+			  if(clt.getRendez_vous_id()!=null)
 			  for (Rendez_vous rv :clt.getRendez_vous_id()) {
 				  if(rv.getValide()==1)
 					  rdvs.add(rv);}

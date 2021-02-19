@@ -54,10 +54,10 @@ public class AdminService {
 				for (Rendez_vous r  :rv ) 
 					if(rr.getId().equalsIgnoreCase(r.getId()) ) {clcentre.add(c);}
 				
-					
+					if(clcentre!=null && clcentre.size()>0 &&reclamationdao.findByclient(c)!=null) {
 				rb = new ReclamationBean (reclamationdao.findByclient(clcentre.get(0)).getId() ,c.getNom() , c.getPrenom() ,reclamationdao.findByclient(c).getEffets_id() ) ;
 				 
-				reclamations.add(rb) ;
+				reclamations.add(rb) ;}
 			
 			
 			
